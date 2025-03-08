@@ -26,8 +26,8 @@
   --gray700: hsl(0, 0%, 20%);
   --gray800: hsl(0, 0%, 12%);
   --gray900: hsl(0, 0%, 8%);
-  --max-width: 320px;
-  --btn-padding: 1rem;
+  --max-width: 365px;
+  --btn-padding: 1em;
 }
 
 *, ::before, ::after {
@@ -62,7 +62,7 @@ body {
 }
 
 .image {
-  max-width: 100px;
+  max-width: 85px;
   width: 100%;
   margin: auto;
   border-radius: 50px;
@@ -77,31 +77,36 @@ body {
 }
 
 .name {
-  font-size: 1.45rem;
+  font-size: 1.49rem;
   font-weight: 700;
 }
 
 .address {
   color: var(--green);
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .note {
   font-weight: 400;
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   text-align: center;
+}
+
+.profile-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
 }
 
 button {
   font-weight: 700;
-  width: 100%;
   padding-top: var(--btn-padding);
   padding-bottom: var(--btn-padding);
   background-color: var(--gray700);
   color: var(--white);
   cursor: pointer;
   border-radius: 7px;
-  margin-bottom: 10px;
   border: none;
 }
 
