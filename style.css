@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-Bold.ttf') format('.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-SemiBold.ttf') format('.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-Regular.ttf') format('.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --blue: hsl(228, 45%, 44%);
+  --gray700: hsl(0, 0%, 20%);
+  --gray800: hsl(0, 0%, 12%);
+  --gray900: hsl(0, 0%, 8%);
+  --max-width: 320px;
+  --btn-padding: 1rem;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  font-size: 14px;
+  padding: 20px;
+  min-height: 100vh;
+  height: auto;
+  background-color: var(--gray900);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  padding: 30px;
+  height: auto;
+  background-color: var(--gray800);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+  margin: auto;
+}
+
+.image {
+  max-width: 100px;
+  width: 100%;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.profile-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.name {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.address {
+  color: var(--green);
+  font-weight: 400;
+}
+
+.note {
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+button {
+  font-weight: 700;
+  width: 100%;
+  padding-top: var(--btn-padding);
+  padding-bottom: var(--btn-padding);
+  background-color: var(--gray700);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+button:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+button:hover {
+  background-color: var(--green);
+  color: var(--gray900);
+}
+
+.attribution {
+  font-size: 11px; 
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: auto;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: -1;
+  padding: 10px;
+}
+
+.attribution a {
+  color: var(--blue)
+}
